@@ -13,7 +13,7 @@
            
             <!--Логотип-->
             <a class="main-header-logo" href="index.html">
-                <img src="http://placehold.it/150x100" alt="Логотип">
+                <img src="http://placehold.it/150x100" width="" height="" alt="Логотип">
             </a>
             
             <!--Меню-->
@@ -45,7 +45,7 @@
             <h2 class="visually-hidden">Результат поиска</h2>
             
             <!--Элемент Найдено-->
-            <span class="result-counter"></span>
+            <p class="result-counter">Найдено: 3</p>
             
             <!--Сортировка-->
             <p class="result-name">Сортировка</p>
@@ -55,57 +55,83 @@
                 <li><a href="#">По рейтингу</a></li>
             </ul>
             
-            <!--Элемент Стрелочки-->
-            <span class="result-on-off"></span>
+            <!--Элемент Стрелки-->
+            <p class="result-rows">
+                <a href="#" alt="По возрастанию" class="result-rows-up"><img src="http://placehold.it/150x100" width="" height=""></a>
+                <a href="#" alt="По убыванию" class="result-rows-down"><img src="http://placehold.it/150x100" width="" height=""></a>
+            </p>
         </section>
         
         <!--Разворот результата поиска гостиниц-->
         <section class="result-view">
             <ul class="result-view-list">
+              
                <li class="result-view-item">
                    <h3>
-                      <a class="result-view-item-category" href="#">Amara resort & spa</a>
+                      <a class="result-view-item-category" href="#" target="_blank">Amara resort & spa</a>
                    </h3>
-                   <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-                   <p>Гостиница <span class="result-view-item-price">от 4000 р.</span></p>
+                   <img src="http://placehold.it/150x100" width="" height="" alt="Amara resort & spa">
+                   <p>Гостиница <span class="result-view-item-price">от 4000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
-                       <a class="about" href="#">Подробнее</a>
-                       <a class="button" href="#">Забронировать</a>
+                       <a class="result-view-item-about" href="#">Подробнее</a>
+                       <a class="result-view-item-button" href="#">Забронировать</a>
                    </p>
-                   <div class="stars-and-rating">
-                       <img src="http://placehold.it/150x100" alt="Stars">
-                       <span class="rating">Рейтинг: 8,5</span>
+                   <!--Звездность-->
+                   <ul class="result-stars">
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                   </ul>
+                   <div class="visually-hidden">
+                       <p>4 звезды</p>
                    </div>
+                   <p class="result-rating">Рейтинг:&nbsp;8,5</p>
                </li>
-               <li>
+               
+               <li class="result-view-item">
                    <h3>
-                      <a class="result-view-item-category" href="#">Desert quail inn</a>
+                      <a class="result-view-item-category" href="#" target="_blank">Desert quail inn</a>
                    </h3>
-                   <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-                   <p>Мотель <span class="result-view-item-price">от 3000 р.</span></p>
+                   <img src="http://placehold.it/150x100" width="" height="" alt="Amara resort & spa">
+                   <p>Мотель <span class="result-view-item-price">от 3000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
                        <a class="button" href="#">Забронировать</a>
                    </p>
-                   <div class="stars-and-rating">
-                       <img src="http://placehold.it/150x100" alt="Stars">
-                       <span class="rating">Рейтинг: 8,9</span>
+                   <!--Звездность-->
+                   <ul class="result-stars">
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                   </ul>
+                   <div class="visually-hidden">
+                       <p>3 звезды</p>
                    </div>
+                   <p class="result-rating">Рейтинг:&nbsp;8,9</p>
                </li>
-               <li>
+               
+               <li class="result-view-item">
                    <h3>
-                      <a class="result-view-item-category" href="#">Villas at Poco Diablo</a>
+                      <a class="result-view-item-category" href="#" target="_blank">Villas at Poco Diablo</a>
                    </h3>
                    <img src="http://placehold.it/150x100" alt="Amara resort & spa">
-                   <p>Апартаменты <span class="result-view-item-price">от 2000 р.</span></p>
+                   <p>Апартаменты <span class="result-view-item-price">от 2000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
                        <a class="button" href="#">Забронировать</a>
                    </p>
-                   <div class="stars-and-rating">
-                       <img src="http://placehold.it/150x100" alt="Stars">
-                       <span class="rating">Рейтинг: 9,2</span>
+                   <!--Звездность-->
+                   <ul class="result-stars">
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                       <li class="result-stars-item"></li>
+                   </ul>
+                   <div class="visually-hidden">
+                       <p>2 звезды</p>
                    </div>
+                   <p class="result-rating">Рейтинг:&nbsp;9,2</p>
                </li>
            </ul>
         </section>
@@ -116,12 +142,16 @@
         <p class="hashtag">#Visitsedona</p>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#">Твиттер</a></li>
-                <li><a class="social-button" href="#">Фейсбук</a></li>
-                <li><a class="social-button" href="#">Ютуб</a></li>
+                <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
+                <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
+                <li><a class="social-button" href="#" target="_blank">Ютуб</a></li>
             </ul>
         </div>
-        <p>Website by <a class="HTMLAc-logo" href="https://htmlacademy.ru/intensive/htmlcss"><img src="http://placehold.it/150x100" alt="Логотип Академии"></a></p>
+        <p>Website by
+            <a class="HTMLAc-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+                <img src="http://placehold.it/150x100" width="" height="" alt="Логотип Академии">
+            </a>
+        </p>
     </footer>
 </body>
 </html>
