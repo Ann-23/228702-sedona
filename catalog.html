@@ -35,8 +35,52 @@
         <!--Фильтр гостиниц-->
         <section class="filters">
             <!--Заголовок h2 (без отображения)-->
-            <h2 class="visually-hidden">Фильтры гостиниц</h2>
-            <!--Здесь будут формы-->
+            <h2 class="visually-hidden">Фильтр гостиниц</h2>
+            <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                        <ul>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="pool" id="filters-pool" checked>
+                                <label for="filters-pool">Бассейн</label>
+                            </li>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="parking" id="filters-parking">
+                                <label for="filters-parking">Парковка</label>
+                            </li>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="net" id="filters-net">
+                                <label for="filters-net">Wi-Fi</label>
+                            </li>
+                        </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                        <ul>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="hotel" id="filters-hotel" checked>
+                                <label for="filters-hotel">Гостиница</label>
+                            </li>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="motel" id="filters-motel" checked>
+                                <label for="filters-motel">Мотель</label>
+                            </li>
+                            <li class="filters-option">
+                                <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="apartments" id="filters-apartments">
+                                <label for="filters-apartments">Апартаменты</label>
+                            </li>
+                        </ul> 
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <p class="filters-range">От 0 до 3000</p>
+                    <p>
+                        <input class="filters-range-input" type="range" name="range" id="filters-range" max="3000" min="0" step="100" value="3000">
+                        <label for="filters-range" class="visually-hidden">Диапазон цен</label>
+                    </p>
+                    <button class="filters-button" type="submit">Показать</button>
+                </fieldset>
+            </form>
         </section>
         
         <!--Результат поиска-->
@@ -57,8 +101,8 @@
             
             <!--Стрелки-->
             <p class="result-rows">
-                <a class="result-row-up" href="#" alt="По возрастанию"></a>
-                <a class="result-row-down" href="#" alt="По убыванию"></a>
+                <a class="result-row-up" href="#" aria-label="Цена по возрастанию">По возрастанию</a>
+                <a class="result-row-down" href="#" aria-label="Цена по возрастанию">По убыванию</a>
             </p>
         </section>
         
@@ -143,7 +187,7 @@
         </div>
         <p>Website by
             <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-                <img src="http://placehold.it/150x100" width="" height="" alt="Логотип Академии">
+                <img src="img/logo-htmlacademy.svg" width="811" height="277" alt="Логотип Академии">
             </a>
         </p>
     </footer>

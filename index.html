@@ -50,7 +50,7 @@
             <p>&mdash; № 1 &mdash;</p>
             <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
             <div class="reason-one-img">
-                <img src="http://placehold.it/150x100">
+                <img src="img/town.jpg" width="800" height="400" alt="Город Седона">
             </div>
         </section>
         
@@ -75,7 +75,7 @@
         <!--Причина № 2-->
         <section class="reason-two">
            <div class="reason-two-img">
-                <img src="http://placehold.it/150x100">
+                <img src="img/bridge.jpg" width="800" height="400" alt="Мост Дьявола">
            </div>
            <h3>Там есть Мост дьявола</h3>
            <p>&mdash; № 2 &mdash;</p>
@@ -108,18 +108,43 @@
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</p>
             <button type="button" class="interested-in-button">Поиск гостиницы в Седоне</button>
-            <!--Здесь будет форма-->
+            <form class="interested-in-form" action="https://echo.htmlacademy.ru" method="post">
+                <p class="interested-in-item">
+                    <label for="date-arrival">Дата заезда:</label>
+                    <input type="text" name="date" id="date-arrival" value="" placeholder="24 апреля 2017"><!--Иконка календаря д.б. добавлена отдельным элементом-->
+                </p>
+                <p class="interested-in-item">
+                    <label for="date-leaving">Дата выезда:</label>
+                    <input type="text" name="date" id="date-leaving" value="" placeholder="4 июля 2017"><!--Иконка календаря д.б. добавлена отдельным элементом-->
+                </p>
+                <p class="interested-in-item-persons">
+                    <label for="adults">Взрослые:</label>
+                    <button class="button-simbol" type="button">-</button>
+                        <input type="text" name="adults-amount" id="adults" value="2">
+                    <button class="button-simbol" type="button">+</button>
+                </p>
+                <p class="interested-in-item-persons">
+                    <label for="children">Дети:</label>
+                    <button class="button-simbol" type="button">-</button>
+                        <input type="text" name="children-amount" id="children" value="0">
+                    <button class="button-simbol" type="button">+</button>
+                </p>
+                <button class="button" type="submit">Найти</button>
+            </form>
         </section>
         
         <!--Карта-->
         <section class="map">
-            <img src="img/map.jpg" width="1200" height="593" alt="Карта">
+            <h2 class="visually-hidden">Как добраться до Седоны</h2>
+            <p>
+                <img src="img/map.jpg" width="1200" height="593" alt="GPS-координаты города Седона штат Аризона 34°51′36″ северной широты, 111°47′21″ западной долготы">
+            </p>
         </section>
     </main>
     
     <!--ФУТЕР-->
     <footer class="main-footer">
-        <p class="hashtag">#Visitsedona</p>
+        <p class="main-footerhashtag">#Visitsedona</p>
         <div class="footer-social">
             <ul>
                 <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
@@ -127,9 +152,9 @@
                 <li><a class="social-button" href="#" target="_blank">Ютуб</a></li>
             </ul>
         </div>
-        <p>Website by
+        <p class="main-footer-logo">Website by
             <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-                <img src="http://placehold.it/150x100" width="" height="" alt="Логотип Академии">
+                <img src="img/logo-htmlacademy.svg" width="811" height="277" alt="Логотип Академии">
             </a>
         </p>
     </footer>
