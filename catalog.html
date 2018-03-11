@@ -71,15 +71,22 @@
                             </li>
                         </ul> 
                 </fieldset>
-                <fieldset>
-                    <legend>Стоимость в сутки (Р):</legend>
-                    <p class="filters-range">От 0 до 3000</p>
-                    <p>
-                        <input class="filters-range-input" type="range" name="range" id="filters-range" max="3000" min="0" step="100" value="3000">
-                        <label for="filters-range" class="visually-hidden">Диапазон цен</label>
-                    </p>
+                <div class="filters-range">
+                    <span>Стоимость в сутки (Р):</span>
+                    <label for="price-min" class="visually-hidden">От 0</label>
+                    <input class="filters-range-input" type="text" name="range" id="price-min" placeholder="от 0">
+                    <input class="filters-range-input" type="text" name="range" id="price-max" placeholder="до 3000">
+                    <label for="price-max" class="visually-hidden">До 3000</label>
                     <button class="filters-button" type="submit">Показать</button>
-                </fieldset>
+                    
+                    <div class="filters-range-controls">
+                        <div class="scale">
+                            <div class="complete-scale"></div>
+                        </div>
+                        <div class="switcher switcher-min"></div>
+                        <div class="switcher switcher-max"></div>
+                    </div>
+                </div>
             </form>
         </section>
         
@@ -101,20 +108,18 @@
             
             <!--Стрелки-->
             <p class="result-rows">
-                <a class="result-row-up" href="#" aria-label="Цена по возрастанию">По возрастанию</a>
-                <a class="result-row-down" href="#" aria-label="Цена по возрастанию">По убыванию</a>
+                <a class="result-row-up" href="#" aria-label="Цена по возрастанию"></a>
+                <a class="result-row-down" href="#" aria-label="Цена по убыванию"></a>
             </p>
         </section>
         
         <!--Разворот результата поиска гостиниц-->
         <section class="result-view">
             <ul class="result-view-list">
-              
                <li class="result-view-item">
                    <h3>
                       <a class="result-view-item-category" href="#" target="_blank">Amara resort & spa</a>
                    </h3>
-                   <img src="img/Amara.jpg" width="135" height="90" alt="Amara resort & spa">
                    <p>Гостиница <span class="result-view-item-price">от 4000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="result-view-item-about" href="#">Подробнее</a>
@@ -135,7 +140,6 @@
                    <h3>
                       <a class="result-view-item-category" href="#" target="_blank">Desert quail inn</a>
                    </h3>
-                   <img src="img/Desert.jpg" width="135" height="90" alt="Desert">
                    <p>Мотель <span class="result-view-item-price">от 3000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
@@ -155,7 +159,6 @@
                    <h3>
                       <a class="result-view-item-category" href="#" target="_blank">Villas at Poco Diablo</a>
                    </h3>
-                   <img src="img/Villas.jpg" width="135" height="90" alt="Villas">
                    <p>Апартаменты <span class="result-view-item-price">от 2000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
@@ -180,14 +183,14 @@
         <p class="hashtag">#Visitsedona</p>
         <div class="footer-social">
             <ul>
-                <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
-                <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
-                <li><a class="social-button" href="#" target="_blank">Ютуб</a></li>
+                <li><a class="social-button" href="#" target="_blank" aria-label="Twitter"></a></li>
+                <li><a class="social-button" href="#" target="_blank" aria-label="Facebook"></a></li>
+                <li><a class="social-button" href="#" target="_blank" aria-label="YouTube"></a></li>
             </ul>
         </div>
-        <p>Website by
-            <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-                <img src="img/logo-htmlacademy.svg" width="811" height="277" alt="Логотип Академии">
+        <p class="copyright">Website by
+            <a class="html-academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank" aria-label="Логотип Академии">
+                <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип Академии">
             </a>
         </p>
     </footer>
