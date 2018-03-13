@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: 
+      url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff2"),
+      url("../fonts/pt-sans-v9-latin_cyrillic-regular.woff"); 
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: 
+      url("../fonts/pt-sans-v9-latin_cyrillic-700.woff2"),
+      url("../fonts/pt-sans-v9-latin_cyrillic-700.woff"); 
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    color: #ffffff;
+
+    background-color: #ffffff;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    font-weight: 700;
+    color: #000000;
+}
+
+.site-navigation a:hover {
+    color: #81b3d2;
+}
+
+.site-navigation a:focus,
+.site-navigation a:active {
+    color: #cacaca;
+}
+
+.main h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.presentation {
+    width: 1200px;
+    height: 773px;
+    background: url("../img/background_photo.jpg") no-repeat #b28175;
+}
+
+.container div.reason-one-img {
+    width: 800px;
+    height: 400px;
+    background: url("../img/town.jpg") no-repeat #81b3d2;
+}
+
+.reasons h3 {
+    line-height: 26px;
+}
+
+.reason-item {
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.benefits-list {
+    list-style: none;
+}
+
+.container div.reason-two-img {
+    width: 800px;
+    height: 400px;
+    background: url("../img/bridge.jpg") no-repeat #81b3d2;
+}
+
+.other-reasons {
+    background-color: #eeeeee;
+}
+
+.other-reasons-list {
+    list-style: none;
+}
+
+.interested-in h2 {
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.button {
+    font: inherit;
+    font-weight: 700;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    
+    border: none;
+}
+
+.interested-in-button {
+    font-size: 21px;
+    line-height: 26px;
+
+    color: #ffffff;
+    
+    background-color: #766357;
+}
+
+.interested-in-button:hover,
+.interested-in-button:focus {
+    background-color: #604e43;
+}
+
+.interested-in-button:active {
+    color: rgba(255, 255, 255, 0.3);
+    
+    background-color: #503e33;
+}
+
+.interested-in-item input {
+    font: inherit;
+    
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.interested-in-item input:hover {
+    background-color: #ebebeb;
+}
+
+.interested-in-item input:focus {
+    outline: none;
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+}
+
+.button-simbol {
+    color: #a9a9a9;
+        
+    background-color: #f2f2f2;
+}
+
+.button-simbol:hover,
+.button-simbol:focus {
+    color: #000000;
+}
+
+.button-simbol:active {
+    color: #81b3d2;
+}
+
+.button-find{
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+}
+
+.button-find:hover,
+.button-find:focus {
+    background-color: #669ec0;
+}
+
+.button-find:active {
+    color: rgba(148, 185, 210, 0.3);
+    
+    background-color: #5496bd;
+}
+
+.map {
+    background-color: #cbdda9;
+}
+
+.main-footer {
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+
+.hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.social {
+    list-style: none;
+}
+
+.copyright {
+    line-height: 26px;
+}
+
+.site-navigation-current a {
+    color: #766357;
+}
+
+.filters {
+    font-size: 14px;
+    line-height: 21px;
+    color: #ffffff;
+    
+    width: 1200px;
+    height: 562px;
+    background: url("../img/filter_background.jpg") no-repeat #6f7279;
+}
+
+.filters-form fieldset{
+    border: none;
+}
+
+.filters-form legend{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filters-list {
+    list-style: none;
+}
+
+.filters-range span {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.filters-range-input {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #ffffff;
+}
+
+.filters-button {
+    font-weight: 400;
+    color: #ffffff;
+    
+    background: transparent;
+    border: 2px solid #ffffff;
+}
+
+.result-counter {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.result-name {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.result-links {
+    font-size: 12px;
+    line-height: 18px;
+    
+    list-style: none;
+}
+
+.result-links a {
+    color: #cacaca;
+    
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.result-links a:hover,
+.result-links a:focus {
+    color: #81b3d2;
+    
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.result-links a:active {
+    color: #000000;
+    
+    border-bottom: none;
+}
+
+.result-links-current a{
+    color: #81b3d2;
+    
+    border-bottom: none;
+}
+
+.result-view-item div.amara-img {
+    width: 135px;
+    height: 90px;
+    background: url("../img/Amara.jpg") no-repeat;
+}
+
+.result-view-item div.desert-img {
+    width: 135px;
+    height: 90px;
+    background: url("../img/Desert.jpg") no-repeat;
+}
+
+.result-view-item div.villas-img {
+    width: 135px;
+    height: 90px;
+    background: url("../img/Villas.jpg") no-repeat;
+}
+
+.result-view-list, .result-stars {
+    list-style: none;
+}
+
+.result-view-item a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.result-view-item-book a {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.result-view-item-book a.about {
+    background-color: #81b3d2;
+}
+
+.result-view-item-book a:hover.about,
+.result-view-item-book a:focus.about {
+    background-color: #669ec0;
+}
+
+.result-view-item-book a:active.about {
+    color: rgba(148, 185, 210, 0.3);
+    
+    background-color: #5496bd;
+}
+
+.result-view-item-book a.book {
+    background-color: #766357;
+}
+
+.result-view-item-book a:hover.book, 
+.result-view-item-book a:focus.book {
+    background-color: #604e43;
+}
+
+.result-view-item-book a:active.book {
+    color: rgba(255, 255, 255, 0.3);
+    
+    background-color: #503e33;
+}
+
+.result-view-item p.result-rating {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #666666;
+    
+    background-color: #f2f2f2;
+}
+
+
+
+

@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>   
     <!--ХЕДЕР-->
     <header class="main-header">
         <nav class="main-navigation">
-           
             <!--Логотип-->
             <a class="main-header-logo">
                 <img src="img/logo.png" width="100" height="50" alt="Логотип">
@@ -30,31 +31,28 @@
        
         <!--Горы-->
         <section class="presentation">
-           
-            <!--Заголовок h1 (без отображения)-->
             <h1 class="visually-hidden">Седона</h1>
-            
-            <!--Надписи на картинке-->
+            <h2 class="visually-hidden">Добро пожаловать!</h2>
             <img src="img/Sedona.png" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
         </section>
         
         <!--Причины-->
         <section class="reasons">
-            <h2>Седона - небольшой городок в Аризоне, заслуживающий большего!</h2>
+            <h3>Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
             <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         
         <!--Причина № 1-->
-        <section class="reason-one">
+        <section class="reason-item">
             <h3>Настоящий городок</h3>
             <p>&mdash; № 1 &mdash;</p>
             <p>Седона - не атракцион для туристов, там течёт своя жизнь</p>
             <div class="reason-one-img">
-                <img src="img/town.jpg" width="800" height="400" alt="Город Седона">
             </div>
         </section>
         
         <!--Бенефиты-->
+        
         <section class="benefits">
             <ul class="benefits-list">
                 <li class="benefits-item">
@@ -73,10 +71,9 @@
         </section>
         
         <!--Причина № 2-->
-        <section class="reason-two">
+        <section class="reason-item">
            <div class="reason-two-img">
-                <img src="img/bridge.jpg" width="800" height="400" alt="Мост Дьявола">
-           </div>
+            </div>
            <h3>Там есть Мост дьявола</h3>
            <p>&mdash; № 2 &mdash;</p>
            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -107,7 +104,7 @@
         <section class="interested-in">
             <h2>Заинтересовались?</h2>
             <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения в Седоне</p>
-            <button class="interested-in-button" type="button" >Поиск гостиницы в Седоне</button>
+            <button class="button interested-in-button" type="button" >Поиск гостиницы в Седоне</button>
             <form class="interested-in-form" action="https://echo.htmlacademy.ru" method="post">
                 <p class="interested-in-item">
                     <label for="date-arrival">Дата заезда:</label>
@@ -117,19 +114,19 @@
                     <label for="date-leaving">Дата выезда:</label>
                     <input type="text" name="date" id="date-leaving" value="" placeholder="4 июля 2017"><!--Иконка календаря д.б. добавлена отдельным элементом-->
                 </p>
-                <p class="interested-in-item-persons">
+                <p class="interested-in-item interested-in-persons">
                     <label for="adults">Взрослые:</label>
-                    <button class="button-simbol" type="button">-</button>
+                    <button class="button button-simbol" type="button">-</button>
                         <input type="text" name="adults-amount" id="adults" value="2">
-                    <button class="button-simbol" type="button">+</button>
+                    <button class="button button-simbol" type="button">+</button>
                 </p>
-                <p class="interested-in-item-persons">
+                <p class="interested-in-item interested-in-persons">
                     <label for="children">Дети:</label>
-                    <button class="button-simbol" type="button">-</button>
+                    <button class="button button-simbol" type="button">-</button>
                         <input type="text" name="children-amount" id="children" value="0">
-                    <button class="button-simbol" type="button">+</button>
+                    <button class="button button-simbol" type="button">+</button>
                 </p>
-                <button class="button" type="submit">Найти</button>
+                <button class="button button-find" type="submit">Найти</button>
             </form>
         </section>
         
@@ -146,7 +143,7 @@
     <footer class="main-footer">
         <p class="hashtag">#Visitsedona</p>
         <div class="footer-social">
-            <ul>
+            <ul class="social">
                 <li><a class="social-button" href="#" target="_blank" aria-label="Twitter"></a></li>
                 <li><a class="social-button" href="#" target="_blank" aria-label="Facebook"></a></li>
                 <li><a class="social-button" href="#" target="_blank" aria-label="YouTube"></a></li>

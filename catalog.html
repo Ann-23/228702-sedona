@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>Sedona-catalog</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!--ХЕДЕР-->
     <header class="main-header">
         <nav class="main-navigation">
-           
             <!--Логотип-->
             <a class="main-header-logo" href="index.html">
                 <img src="img/logo.png" width="100" height="50" alt="Логотип">
@@ -36,10 +37,10 @@
         <section class="filters">
             <!--Заголовок h2 (без отображения)-->
             <h2 class="visually-hidden">Фильтр гостиниц</h2>
-            <form class="filters" action="https://echo.htmlacademy.ru" method="post">
+            <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
                 <fieldset>
                     <legend>Инфраструктура:</legend>
-                        <ul>
+                        <ul class="filters-list">
                             <li class="filters-option">
                                 <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="pool" id="filters-pool" checked>
                                 <label for="filters-pool">Бассейн</label>
@@ -54,9 +55,9 @@
                             </li>
                         </ul>
                 </fieldset>
-                <fieldset>
+                <fieldset >
                     <legend>Тип жилья:</legend>
-                        <ul>
+                        <ul class="filters-list">
                             <li class="filters-option">
                                 <input class="visually-hidden filters-input filters-input-checkbox" type="checkbox" name="hotel" id="filters-hotel" checked>
                                 <label for="filters-hotel">Гостиница</label>
@@ -74,10 +75,10 @@
                 <div class="filters-range">
                     <span>Стоимость в сутки (Р):</span>
                     <label for="price-min" class="visually-hidden">От 0</label>
-                    <input class="filters-range-input" type="text" name="range" id="price-min" placeholder="от 0">
-                    <input class="filters-range-input" type="text" name="range" id="price-max" placeholder="до 3000">
+                    <input class="filters-range-input" type="text" name="range" id="price-min" placeholder="ОТ 0">
+                    <input class="filters-range-input" type="text" name="range" id="price-max" placeholder="ДО 3000">
                     <label for="price-max" class="visually-hidden">До 3000</label>
-                    <button class="filters-button" type="submit">Показать</button>
+                    <button class="button filters-button" type="submit">Показать</button>
                     
                     <div class="filters-range-controls">
                         <div class="scale">
@@ -116,14 +117,17 @@
         <!--Разворот результата поиска гостиниц-->
         <section class="result-view">
             <ul class="result-view-list">
+              
                <li class="result-view-item">
+                   <div class="amara-img">
+                   </div>
                    <h3>
-                      <a class="result-view-item-category" href="#" target="_blank">Amara resort & spa</a>
+                      <a class="result-view-category" href="#" target="_blank">Amara resort & spa</a>
                    </h3>
                    <p>Гостиница <span class="result-view-item-price">от 4000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
-                       <a class="result-view-item-about" href="#">Подробнее</a>
-                       <a class="result-view-item-button" href="#">Забронировать</a>
+                       <a class="about" href="#">Подробнее</a>
+                       <a class="book" href="#">Забронировать</a>
                    </p>
                    <!--Звездность-->
                    <ul class="result-stars">
@@ -137,13 +141,15 @@
                </li>
                
                <li class="result-view-item">
+                   <div class="desert-img">
+                   </div>
                    <h3>
-                      <a class="result-view-item-category" href="#" target="_blank">Desert quail inn</a>
+                      <a class="result-view-category" href="#" target="_blank">Desert quail inn</a>
                    </h3>
                    <p>Мотель <span class="result-view-item-price">от 3000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
-                       <a class="button" href="#">Забронировать</a>
+                       <a class="book" href="#">Забронировать</a>
                    </p>
                    <!--Звездность-->
                    <ul class="result-stars">
@@ -156,13 +162,15 @@
                </li>
                
                <li class="result-view-item">
+                   <div class="villas-img">
+                   </div>
                    <h3>
-                      <a class="result-view-item-category" href="#" target="_blank">Villas at Poco Diablo</a>
+                      <a class="result-view-category" href="#" target="_blank">Villas at Poco Diablo</a>
                    </h3>
                    <p>Апартаменты <span class="result-view-item-price">от 2000&nbsp;р.</span></p>
                    <p class="result-view-item-book">
                        <a class="about" href="#">Подробнее</a>
-                       <a class="button" href="#">Забронировать</a>
+                       <a class="book" href="#">Забронировать</a>
                    </p>
                    <!--Звездность-->
                    <ul class="result-stars">
@@ -182,7 +190,7 @@
     <footer class="main-footer">
         <p class="hashtag">#Visitsedona</p>
         <div class="footer-social">
-            <ul>
+            <ul class="social">
                 <li><a class="social-button" href="#" target="_blank" aria-label="Twitter"></a></li>
                 <li><a class="social-button" href="#" target="_blank" aria-label="Facebook"></a></li>
                 <li><a class="social-button" href="#" target="_blank" aria-label="YouTube"></a></li>
