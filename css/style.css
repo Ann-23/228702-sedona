@@ -51,16 +51,16 @@ a {
     color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:focus,
 .site-navigation a:active {
     color: #cacaca;
 }
 
-.main h3 {
+.header3 {
     font-size: 21px;
     line-height: 21px;
 }
@@ -68,16 +68,23 @@ a {
 .presentation {
     width: 1200px;
     height: 773px;
-    background: url("../img/background_photo.jpg") no-repeat #b28175;
+    background-image: url("../img/background_photo.jpg");
+    background-repeat: no-repeat;
+    background-color: #b28175;
 }
 
-.container div.reason-one-img {
+.reason-img {
     width: 800px;
     height: 400px;
-    background: url("../img/town.jpg") no-repeat #81b3d2;
+    background-color: #b28175;
 }
 
-.reasons h3 {
+.town {
+    background-image: url("../img/town.jpg");
+    background-repeat: no-repeat;
+}
+
+.header3-town {
     line-height: 26px;
 }
 
@@ -91,10 +98,9 @@ a {
     list-style: none;
 }
 
-.container div.reason-two-img {
-    width: 800px;
-    height: 400px;
-    background: url("../img/bridge.jpg") no-repeat #81b3d2;
+.bridge {
+    background-image: url("../img/bridge.jpg");
+    background-repeat: no-repeat;
 }
 
 .other-reasons {
@@ -226,7 +232,9 @@ a {
     
     width: 1200px;
     height: 562px;
-    background: url("../img/filter_background.jpg") no-repeat #6f7279;
+    background-image: url("../img/filter_background.jpg");
+    background-repeat: no-repeat;
+    background-color: #6f7279;
 }
 
 .filters-form fieldset{
@@ -247,9 +255,19 @@ a {
     font-weight: 700;
 }
 
-.filters-range-input {
-    font: inherit;
+.filters-range input::-ms-input-placeholder {
+    color: #ffffff;
+    
+    text-transform: uppercase;
+}
 
+.filters-range input::placeholder {
+    color: #ffffff;
+    
+    text-transform: uppercase;
+}
+
+.filters-range-input {
     background-color: transparent;
     border: 2px solid #ffffff;
 }
@@ -305,22 +323,27 @@ a {
     border-bottom: none;
 }
 
-.result-view-item div.amara-img {
+.result-img {
     width: 135px;
     height: 90px;
-    background: url("../img/Amara.jpg") no-repeat;
 }
 
-.result-view-item div.desert-img {
-    width: 135px;
-    height: 90px;
-    background: url("../img/Desert.jpg") no-repeat;
+.amara {
+    background-image: url("../img/amara.jpg");
+    background-repeat: no-repeat;
+    background-color: #9c2439;
 }
 
-.result-view-item div.villas-img {
-    width: 135px;
-    height: 90px;
-    background: url("../img/Villas.jpg") no-repeat;
+.desert {
+    background-image: url("../img/desert.jpg");
+    background-repeat: no-repeat;
+    background-color: #bc9d8f;
+}
+
+.villas {
+    background-image: url("../img/villas.jpg");
+    background-repeat: no-repeat;
+    background-color: #9eb468;
 }
 
 .result-view-list, .result-stars {
