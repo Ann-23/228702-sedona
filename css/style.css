@@ -85,6 +85,7 @@ a {
 }
 
 .header3-town {
+    font-size: 21px;
     line-height: 26px;
 }
 
@@ -114,6 +115,10 @@ a {
 .interested-in h2 {
     font-size: 30px;
     line-height: 36px;
+}
+
+.interested-in-title {
+    line-height: 24px;
 }
 
 .button {
@@ -146,11 +151,51 @@ a {
     background-color: #503e33;
 }
 
+.interested-in-item {
+    font-weight: 700;
+    line-height: 26px;
+}
+
 .interested-in-item input {
-    font: inherit;
+    font-weight: 700;
+    line-height: 26px;
     
     background-color: #f2f2f2;
     border: none;
+}
+
+.interested-in-item input::-ms-input-placeholder {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    
+    text-transform: uppercase;
+}
+
+.interested-in-item input:-ms-input-placeholder {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    
+    text-transform: uppercase;
+}
+
+.interested-in-item input::-moz-placeholder {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    
+    text-transform: uppercase;
+    
+    opacity: 1;
+}
+
+.interested-in-item input::placeholder {
+    font-weight: 700;
+    line-height: 26px;
+    color: #000000;
+    
+    text-transform: uppercase;
 }
 
 .interested-in-item input:hover {
@@ -164,6 +209,8 @@ a {
 }
 
 .button-simbol {
+    font-size: 28px;
+    line-height: 26px;
     color: #a9a9a9;
         
     background-color: #f2f2f2;
@@ -256,6 +303,12 @@ a {
 }
 
 .filters-range input::-ms-input-placeholder {
+    color: #ffffff;
+    
+    text-transform: uppercase;
+}
+
+.filters-range input:-ms-input-placeholder {
     color: #ffffff;
     
     text-transform: uppercase;
