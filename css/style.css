@@ -34,49 +34,199 @@ a {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    
+    outline: 4px solid blue;/*временно*/
+}
+
 .main-navigation {
+    position: relative;
     font-size: 14px;
     line-height: 26px;
-    color: #ffffff;
-
-    background-color: #ffffff;
 }
 
-.site-navigation {
+.header-logo {
+    position: absolute;
+    width: 138px;
+    height: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.site-nav {
+    display: flex;
+    flex-wrap: wrap;
+    
+    margin: 0;
+    padding: 0;
+    padding: 15px 72px;
+    
     list-style: none;
+    
+    outline: 4px solid green;/*временно*/
 }
 
-.site-navigation a {
+.site-nav li.site-link:first-child, li.site-link:nth-child(2) {
+    text-align: left;
+}
+
+.site-nav li.site-link:first-child {
+    margin-right: 112px;
+}
+
+.site-nav li.site-link:nth-child(2) {
+    margin-right: 320px;
+}
+
+.site-nav li.site-link:last-child, li.site-link:nth-child(3) {
+    text-align: right;
+}
+
+.site-nav li.site-link:last-child {
+    margin-left: 112px;
+}
+
+.site-link {
+    width: 128px;
+    
+    outline: 4px solid yellow;/*временно*/
+}
+
+.site-nav a {
     font-weight: 700;
     color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-nav a:hover,
+.site-nav a:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-nav a:active {
     color: #cacaca;
 }
 
+.current a {
+    color: #766357;
+}
+
 .header3 {
+    width: 151px;
     font-size: 21px;
     line-height: 21px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 25px;
 }
 
 .presentation {
-    width: 1200px;
-    height: 773px;
+    min-height: 445px;
+    padding-top: 77px;
+    
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
     background-color: #b28175;
+    
+    outline: 4px solid red;/*временно*/
+}
+
+.presentaion-img {
+    width: 458px;
+    height: 352px;
+    
+    margin:  auto;
+    
+    background-image: url("../img/Sedona.png");
+    background-repeat: no-repeat;
+    
+}
+
+.reasons-header {
+    padding-top: 64px;
+    padding-bottom: 54px;
+    
+    outline: 4px solid red;/*временно*/
+}
+
+.header3-town {
+    width: 445px;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+        
+    margin: 0 auto;
+    padding:0;
+}
+
+.reasons-5 {
+    margin: 0;
+    padding:0;
+    margin-top: 33px;
+    text-align: center;
+}
+
+.reasons {
+    display: flex;
+    color: #ffffff;
+    
+    background-color: #81b3d2;
+    
+    outline: 6px solid green;/*временно*/
+}
+
+.reasons p, .benefits p, .other-reasons p{
+    margin: 0;
+    padding: 0;
+}
+
+.reasons .reasons-item-p, .benefits .reasons-item-p, .other-reasons .reasons-item-p {
+    margin-top: 25px;
+}
+
+.reason-item {
+    box-sizing: border-box;
+    width: 400px;
+    padding-top: 50px;
+    padding-bottom: 62px;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    
+    outline: 4px solid yellow;/*временно*/
+}
+
+.reason-item-2 {
+    padding-left: 48px;    
+    padding-right: 50px;
+}
+
+.reason-item-3 {
+    padding-left: 95px;    
+    padding-right: 95px;
+}
+
+.reason-item-4 {
+    padding-left: 70px;    
+    padding-right: 70px;
 }
 
 .reason-img {
     width: 800px;
-    height: 400px;
+    min-height: 256px;
     background-color: #b28175;
+    
+    outline: 6px solid pink;/*временно*/
 }
 
 .town {
@@ -84,19 +234,21 @@ a {
     background-repeat: no-repeat;
 }
 
-.header3-town {
-    font-size: 21px;
-    line-height: 26px;
-}
-
-.reason-item {
-    color: #ffffff;
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     
-    background-color: #81b3d2;
+    outline: 4px solid red;/*временно*/
 }
 
-.benefits-list {
-    list-style: none;
+.benefits-item {
+    box-sizing: border-box;
+    width: 400px;
+    padding: 45px 60px;
+    text-align: center;
+    
+    outline: 4px solid yellow;/*временно*/
 }
 
 .bridge {
@@ -105,35 +257,59 @@ a {
 }
 
 .other-reasons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
     background-color: #eeeeee;
+    
+    outline: 4px solid red;/*временно*/
 }
 
-.other-reasons-list {
-    list-style: none;
+.interested-in {
+    padding-top: 55px;
+    
+    outline: 4px solid red;/*временно*/
 }
 
 .interested-in h2 {
     font-size: 30px;
     line-height: 36px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding: 0;
+    text-align: center;
 }
 
 .interested-in-title {
+    width: 440px;
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 50px;
     line-height: 24px;
+    text-align: center;
 }
 
 .button {
     font: inherit;
     font-weight: 700;
-    text-align: center;
-    vertical-align: middle;
+        
     text-transform: uppercase;
     
     border: none;
 }
 
+.button-style {
+    width: 574px;
+    margin: 0 auto;
+}
+
 .interested-in-button {
     font-size: 21px;
     line-height: 26px;
+    
+    padding: 34px 140px;
 
     color: #ffffff;
     
@@ -148,12 +324,32 @@ a {
 .interested-in-button:active {
     color: rgba(255, 255, 255, 0.3);
     
-    background-color: #503e33;
+    background-color: #503e33;  
+}
+
+.modal {
+    /*position: fixed;*/
+    z-index: 2;
+    width: 574px;
+    margin: 0 auto;
+}
+
+.interested-in-form {
+    margin: 0 auto;
+    padding: 55px;
+    
+    text-align: center;
+    outline: 4px solid pink; /*временно*/
 }
 
 .interested-in-item {
     font-weight: 700;
     line-height: 26px;
+    text-align: left;
+    
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
 }
 
 .interested-in-item input {
@@ -212,7 +408,7 @@ a {
     font-size: 28px;
     line-height: 26px;
     color: #a9a9a9;
-        
+    
     background-color: #f2f2f2;
 }
 
@@ -226,6 +422,11 @@ a {
 }
 
 .button-find{
+    width: 458px;
+    padding: 20px 140px;
+    
+    font-size: 21px;
+    line-height: 26px;
     color: #ffffff;
     
     background-color: #81b3d2;
@@ -243,7 +444,16 @@ a {
 }
 
 .map {
+    width: 1200px;
+    min-height: 474px;
     background-color: #cbdda9;
+    
+    outline: 4px solid red;
+}
+
+.map-img {
+    margin: 0;
+    padding: 0;
 }
 
 .main-footer {
@@ -252,20 +462,47 @@ a {
     
     background-color: rgba(255, 255, 255, 0.3);
     
+    padding: 0;
+}
+
+.main-footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    
+    outline: 4px solid red; /*временно*/
 }
 
 .hashtag {
+    width: 300px;
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    padding: 50px 60px;
+     
+    outline: 6px solid yellow; /*временно*/
 }
 
 .social {
+    width: 300px;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    outline: 6px solid yellow; /*временно*/
 }
 
 .copyright {
+    width: 300px;
     line-height: 26px;
+    margin: 0;
+    padding: 40px 20px;
+    text-align: center;
+    vertical-align: middle;
+    
+    outline: 6px solid yellow; /*временно*/
 }
 
 .site-navigation-current a {
@@ -277,11 +514,36 @@ a {
     line-height: 21px;
     color: #ffffff;
     
-    width: 1200px;
-    height: 562px;
+    padding-top: 30px;
+    padding-bottom: 31px;
+    
     background-image: url("../img/filter_background.jpg");
     background-repeat: no-repeat;
     background-color: #6f7279;
+    
+    outline: 6px solid red; /*временно*/
+}
+
+.filters-form {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.filters-form-fieldset {
+    width: 190px;
+    
+    margin: 0;
+    padding: 0;
+        
+    min-height: 160px; /*временно*/
+    outline: 6px solid yellow; /*временно*/
+}
+
+.filters-range {
+    width: 328px;
+    
+    outline: 6px solid yellow; /*временно*/
 }
 
 .filters-form fieldset{
@@ -291,10 +553,33 @@ a {
 .filters-form legend{
     font-size: 16px;
     font-weight: 700;
+    
+    margin: 0;
+    padding: 0;
 }
 
 .filters-list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    margin-top: 25px;
+}
+
+.filters-option {
+    margin-bottom: 23px;
+}
+
+.filters-list li:last-child{
+    margin-bottom: 0;
+}
+
+.filters-range {
+    width: 350px;
+}
+
+.filters-range-input {
+    margin-top: 12px;
 }
 
 .filters-range span {
@@ -333,22 +618,54 @@ a {
     border: 2px solid #ffffff;
 }
 
+.result {
+    display: flex;
+    padding: 34px 72px;
+    outline: 6px solid pink;/*временно*/
+}
+
 .result-counter {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+    
+    margin: 0;
+    padding: 0;
+    margin-right: 50px;
+    
+    outline: 2px solid pink;/*временно*/
+    min-height: 50px;
 }
 
 .result-name {
     font-size: 12px;
     line-height: 18px;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    margin-right: 38px;
+    
+    outline: 2px solid green;/*временно*/
 }
 
 .result-links {
+    display: flex;
+        
     font-size: 12px;
     line-height: 18px;
-    
+        
     list-style: none;
+    
+    margin: 0;
+    padding: 0;
+    padding-top: 7px;
+    
+    outline: 2px solid pink;/*временно*/
+}
+
+.result-links li {
+    margin-right: 32px;
 }
 
 .result-links a {
@@ -376,9 +693,48 @@ a {
     border-bottom: none;
 }
 
+.result-rows {
+    width: 40px;
+    
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    
+    outline: 2px solid pink;/*временно*/
+}
+
+.result-view {
+    width: 1200px;
+}
+
+.result-view-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    outline: 6px solid pink;/*временно*/
+}
+
+.result-view-item {
+    display: flex;
+        
+    padding: 30px 72px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    
+    outline: 6px solid pink;/*временно*/
+}
+
 .result-img {
     width: 135px;
     height: 90px;
+    
+    margin-right: 30px;
+    
+    outline: 2px solid yellow;/*временно*/
 }
 
 .amara {
@@ -399,8 +755,56 @@ a {
     background-color: #9eb468;
 }
 
-.result-view-list, .result-stars {
+.result-hotel {
+    min-width: 653px;
+    
+    outline: 2px solid yellow;/*временно*/
+}
+
+.header3-catalog {
+    font-size: 21px;
+    line-height: 26px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.result-view-p{
+    margin: 0;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.result-price-amara {
+    margin-left: 40px;
+}
+
+.result-price-desert {
+    margin-left: 64px;
+}
+
+.result-price-villas {
+    margin-left: 21px;
+}
+
+.stars {
+    width: 110px;
+    margin-left: auto;
+    padding-top: 63px;
+    padding-left: 130px;
+    
+    outline: 6px solid yellow;/*временно*/
+}
+
+.result-stars {
     list-style: none;
+}
+
+.result-rating {
+    width: 78px;
+    margin: 0;
+    padding: 0;
+    padding: 6px 16px;
 }
 
 .result-view-item a {
@@ -410,38 +814,51 @@ a {
     color: #000000;
 }
 
-.result-view-item-book a {
+.result-view-buttons {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.result-view-buttons a {
     font-size: 14px;
     line-height: 21px;
     font-weight: 700;
     color: #ffffff;
+    text-align: center;
 }
 
-.result-view-item-book a.about {
+.result-view-buttons a.about {
+    width: 110px;
+    margin: 0;
+    margin-right: 5px;
     background-color: #81b3d2;
 }
 
-.result-view-item-book a:hover.about,
-.result-view-item-book a:focus.about {
+.result-view-buttons a:hover.about,
+.result-view-buttons a:focus.about {
     background-color: #669ec0;
 }
 
-.result-view-item-book a:active.about {
+.result-view-buttons a:active.about {
     color: rgba(148, 185, 210, 0.3);
     
     background-color: #5496bd;
+    
 }
 
-.result-view-item-book a.book {
+.result-view-buttons a.book {
+    width: 142px;
+    margin: 0;
     background-color: #766357;
 }
 
-.result-view-item-book a:hover.book, 
-.result-view-item-book a:focus.book {
+.result-view-buttons a:hover.book, 
+.result-view-buttons a:focus.book {
     background-color: #604e43;
 }
 
-.result-view-item-book a:active.book {
+.result-view-buttons a:active.book {
     color: rgba(255, 255, 255, 0.3);
     
     background-color: #503e33;
