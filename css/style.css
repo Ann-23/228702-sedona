@@ -55,6 +55,7 @@ a {
     line-height: 26px;
 }
 
+<<<<<<< HEAD
 .header-logo {
     position: absolute;
     width: 138px;
@@ -64,11 +65,25 @@ a {
 }
 
 .site-nav {
+=======
+.main-header-logo {
+    position: absolute;
+    width: 138px;
+    height: 70px;
+    left: 531px;
+}
+
+.site-navigation {
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     display: flex;
     flex-wrap: wrap;
     
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     padding: 15px 72px;
     
     list-style: none;
@@ -76,8 +91,27 @@ a {
     outline: 4px solid green;/*временно*/
 }
 
+<<<<<<< HEAD
 .site-nav li.site-link:first-child, li.site-link:nth-child(2) {
     text-align: left;
+=======
+.site-navigation li {
+    width: 128px;
+    
+    outline: 4px solid yellow;/*временно*/
+}
+
+.site-navigation .menu-information {
+    margin-right: 112px;
+}
+
+.site-navigation .menu-foto {
+    margin-right: 320px;
+}
+
+.site-navigation .menu-map {
+    margin-right: 112px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .site-nav li.site-link:first-child {
@@ -131,8 +165,13 @@ a {
 }
 
 .presentation {
+<<<<<<< HEAD
     min-height: 445px;
     padding-top: 77px;
+=======
+    min-height: 520px;
+    margin: 0 auto;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     background-image: url("../img/background_photo.jpg");
     background-repeat: no-repeat;
@@ -142,6 +181,7 @@ a {
 }
 
 .presentaion-img {
+<<<<<<< HEAD
     width: 458px;
     height: 352px;
     
@@ -155,6 +195,15 @@ a {
 .reasons-header {
     padding-top: 64px;
     padding-bottom: 54px;
+=======
+    padding-top: 77px;
+    padding-left: 370px;
+}
+
+.reasons {
+    min-height: 154px;
+    padding-top: 120px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     outline: 4px solid red;/*временно*/
 }
@@ -164,6 +213,7 @@ a {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
+<<<<<<< HEAD
         
     margin: 0 auto;
     padding:0;
@@ -178,11 +228,29 @@ a {
 
 .reasons {
     display: flex;
+=======
+    
+    margin: 0;
+    padding:0;
+}
+
+.reasons-5 {
+    margin: 0;
+    padding:0;
+    text-align: center;
+}
+
+.reason-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     color: #ffffff;
     
     background-color: #81b3d2;
     
     outline: 6px solid green;/*временно*/
+<<<<<<< HEAD
 }
 
 .reasons p, .benefits p, .other-reasons p{
@@ -244,6 +312,48 @@ a {
 
 .benefits-item {
     box-sizing: border-box;
+=======
+}
+
+.reason-item-1 {
+    width: 400px;
+    padding: 50px 60px;
+    text-align: center;
+}
+
+.reason-img {
+    width: 800px;
+    min-height: 255px;
+    background-color: #b28175;
+    
+    outline: 6px solid pink;/*временно*/
+}
+
+.town {
+    background-image: url("../img/town.jpg");
+    background-repeat: no-repeat;
+}
+
+.benefits {
+    width: 100%;
+    
+    outline: 4px solid red;/*временно*/
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    outline: 10px solid yellowgreen;/*временно*/
+}
+
+.benefits-item {
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     width: 400px;
     padding: 45px 60px;
     text-align: center;
@@ -257,17 +367,46 @@ a {
 }
 
 .other-reasons {
+<<<<<<< HEAD
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     
+=======
+    width: 100%;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     background-color: #eeeeee;
     
     outline: 4px solid red;/*временно*/
 }
 
+<<<<<<< HEAD
 .interested-in {
     padding-top: 55px;
+=======
+.other-reasons-list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+    outline: 10px solid yellowgreen;/*временно*/
+}
+
+.other-reasons-item {
+    width: 400px;
+    padding: 45px 70px;
+    text-align: center;
+    
+    outline: 4px solid yellow;/*временно*/
+}
+
+.interested-in {
+    width: 100%;
+    min-height: 290px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     outline: 4px solid red;/*временно*/
 }
@@ -276,7 +415,10 @@ a {
     font-size: 30px;
     line-height: 36px;
     margin: 0;
+<<<<<<< HEAD
     margin-bottom: 30px;
+=======
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     padding: 0;
     text-align: center;
 }
@@ -340,6 +482,11 @@ a {
     
     text-align: center;
     outline: 4px solid pink; /*временно*/
+}
+
+.interested-in-form {
+    width: 575px;
+    outline: 4px solid pink;
 }
 
 .interested-in-item {
@@ -462,12 +609,20 @@ a {
     
     background-color: rgba(255, 255, 255, 0.3);
     
+<<<<<<< HEAD
     padding: 0;
+=======
+    padding: 40px 0;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .main-footer .footer-container {
     display: flex;
+<<<<<<< HEAD
     justify-content: space-between;
+=======
+    justify-content: space-around;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     outline: 4px solid red; /*временно*/
 }
@@ -477,10 +632,14 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+<<<<<<< HEAD
     text-align: center;
     margin: 0;
     padding: 0;
     padding: 50px 60px;
+=======
+    margin: 0;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
      
     outline: 6px solid yellow; /*временно*/
 }
@@ -492,15 +651,23 @@ a {
     padding: 0;
     
     outline: 6px solid yellow; /*временно*/
+<<<<<<< HEAD
+=======
+    min-height: 50px; /*временно*/
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .copyright {
     width: 300px;
     line-height: 26px;
     margin: 0;
+<<<<<<< HEAD
     padding: 40px 20px;
     text-align: center;
     vertical-align: middle;
+=======
+    text-align: center;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     outline: 6px solid yellow; /*временно*/
 }
@@ -515,7 +682,11 @@ a {
     color: #ffffff;
     
     padding-top: 30px;
+<<<<<<< HEAD
     padding-bottom: 31px;
+=======
+    padding-bottom: 32px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     background-image: url("../img/filter_background.jpg");
     background-repeat: no-repeat;
@@ -528,6 +699,11 @@ a {
     display: flex;
     justify-content: space-around;
     
+<<<<<<< HEAD
+=======
+    margin: 0;
+    padding: 0;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .filters-form-fieldset {
@@ -562,6 +738,7 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     
     margin-top: 25px;
 }
@@ -572,14 +749,19 @@ a {
 
 .filters-list li:last-child{
     margin-bottom: 0;
+=======
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .filters-range {
     width: 350px;
+<<<<<<< HEAD
 }
 
 .filters-range-input {
     margin-top: 12px;
+=======
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .filters-range span {
@@ -620,7 +802,11 @@ a {
 
 .result {
     display: flex;
+<<<<<<< HEAD
     padding: 34px 72px;
+=======
+        
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     outline: 6px solid pink;/*временно*/
 }
 
@@ -631,6 +817,10 @@ a {
     
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
+=======
+    margin-left: 72px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     margin-right: 50px;
     
     outline: 2px solid pink;/*временно*/
@@ -643,15 +833,24 @@ a {
     
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     padding-top: 7px;
     margin-right: 38px;
+=======
+    margin-right: 39px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     
     outline: 2px solid green;/*временно*/
 }
 
 .result-links {
     display: flex;
+<<<<<<< HEAD
         
+=======
+    width: 356px;
+    justify-content: space-between;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     font-size: 12px;
     line-height: 18px;
         
@@ -659,6 +858,7 @@ a {
     
     margin: 0;
     padding: 0;
+<<<<<<< HEAD
     padding-top: 7px;
     
     outline: 2px solid pink;/*временно*/
@@ -666,6 +866,10 @@ a {
 
 .result-links li {
     margin-right: 32px;
+=======
+    
+    outline: 2px solid pink;/*временно*/
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .result-links a {
@@ -694,10 +898,18 @@ a {
 }
 
 .result-rows {
+<<<<<<< HEAD
     width: 40px;
     
     margin: 0;
     padding: 0;
+=======
+    width: 240px;
+    
+    margin: 0;
+    padding: 0;
+    margin-right: 72px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     margin-left: auto;
     
     outline: 2px solid pink;/*временно*/
@@ -721,20 +933,48 @@ a {
 .result-view-item {
     display: flex;
         
+<<<<<<< HEAD
     padding: 30px 72px;
+=======
+    padding: 22px 73px;
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
     border-top: 1px solid #e5e5e5;
     border-bottom: 1px solid #e5e5e5;
     
     outline: 6px solid pink;/*временно*/
 }
 
+<<<<<<< HEAD
+=======
+.result-view-item:last-child {
+    margin-right: 0;
+}
+
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 .result-img {
     width: 135px;
     height: 90px;
     
     margin-right: 30px;
     
+<<<<<<< HEAD
     outline: 2px solid yellow;/*временно*/
+=======
+    outline: 6px solid yellow;/*временно*/
+}
+
+.result-hotel {
+    width: 265px;
+    
+    outline: 6px solid yellow;/*временно*/
+}
+
+.stars {
+    width: 240px;
+    margin-left: auto;
+    
+    outline: 6px solid yellow;/*временно*/
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 }
 
 .amara {
@@ -755,6 +995,7 @@ a {
     background-color: #9eb468;
 }
 
+<<<<<<< HEAD
 .result-hotel {
     min-width: 653px;
     
@@ -796,6 +1037,8 @@ a {
     outline: 6px solid yellow;/*временно*/
 }
 
+=======
+>>>>>>> 22c7ef97dc66707c0bcc9d4f76b40ebfa63576ca
 .result-stars {
     list-style: none;
 }
