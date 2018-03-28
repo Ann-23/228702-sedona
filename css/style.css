@@ -1015,8 +1015,8 @@ li.site-link:nth-child(3) {
 }
 
 .range-toggle:hover {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
 }
 
 .btn-transparent {
