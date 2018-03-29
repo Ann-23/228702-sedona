@@ -387,7 +387,8 @@ li.site-link:nth-child(3) {
 }
 
 .interested-in-button {
-    padding: 30px 139px;
+    width: 510px;
+    padding: 30px;
 
     background-color: #766357;
 }
@@ -401,6 +402,67 @@ li.site-link:nth-child(3) {
     color: rgba(255, 255, 255, 0.3);
 
     background-color: #503e33;
+}
+
+.modal {
+  display: none;
+}
+
+.modal-show {
+  display: block;
+}
+
+.slideRight{
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight; 
+ 
+    animation-duration: 2s; 
+    -webkit-animation-duration: 2s;
+ 
+    animation-timing-function: ease-in-out; 
+    -webkit-animation-timing-function: ease-in-out;     
+}
+ 
+@keyframes slideRight {
+    0% {
+        transform: translateX(-150%);
+    }
+    50%{
+        transform: translateX(8%);
+    }
+    65%{
+        transform: translateX(-4%);
+    }
+    80%{
+        transform: translateX(4%);
+    }
+    95%{
+        transform: translateX(-2%);
+    }           
+    100% {
+        transform: translateX(0%);
+    }   
+}
+ 
+@-webkit-keyframes slideRight {
+    0% {
+        -webkit-transform: translateX(-150%);
+    }
+    50%{
+        -webkit-transform: translateX(8%);
+    }
+    65%{
+        -webkit-transform: translateX(-4%);
+    }
+    80%{
+        -webkit-transform: translateX(4%);
+    }
+    95%{
+        -webkit-transform: translateX(-2%);
+    }           
+    100% {
+        -webkit-transform: translateX(0%);
+    }
 }
 
 .interested-in-form {
@@ -428,15 +490,15 @@ li.site-link:nth-child(3) {
 }
 
 .interested-in-arrival label {
-    margin-right: 21px;
+    margin-right: 19px;
 }
 
 .interested-in-leaving label {
-    margin-right: 17px;
+    margin-right: 16px;
 }
 
 .interested-in-persons label {
-    margin-top: 7px;
+    margin-top: 5px;
     margin-right: 41px;
 }
 
@@ -449,7 +511,7 @@ li.site-link:nth-child(3) {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
 
-    width: 343px;
+    width: 345px;
     min-height: 38px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -541,8 +603,8 @@ li.site-link:nth-child(3) {
 
 .calendar-conteiner {
     position: absolute;
-    top: 9px;
-    right: 15px;
+    top: 7px;
+    right: 19px;
 }
 
 .calendar {
@@ -550,6 +612,10 @@ li.site-link:nth-child(3) {
     
     width: 21px;
     height: 22px;
+    
+    border: none;
+    background: none;
+    outline: none;
 }
 
 .calendar:after {
@@ -966,10 +1032,6 @@ li.site-link:nth-child(3) {
     background: none;
     border: none;
 }
-
-/*.price-controls input:focus {
-    background-color: #669ec0;
-}*/
 
 .range-controls {
     position: relative;
