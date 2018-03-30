@@ -121,11 +121,11 @@ li.site-link:nth-child(2) {
 }
 
 .site-nav li.site-link:first-child {
-    margin-right: 112px;
+    margin-right: 113px;
 }
 
 .site-nav li.site-link:nth-child(2) {
-    margin-right: 315px;
+    margin-right: 314px;
 }
 
 .site-nav li.site-link:last-child,
@@ -134,7 +134,7 @@ li.site-link:nth-child(3) {
 }
 
 .site-nav li.site-link:last-child {
-    margin-left: 116px;
+    margin-left: 117px;
 }
 
 .site-nav a {
@@ -192,9 +192,12 @@ li.site-link:nth-child(3) {
 
 .reasons-5 {
     text-align: center;
-
+    
+    width: 495px;
     margin: 0;
     margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0;
 }
 
@@ -265,6 +268,7 @@ li.site-link:nth-child(3) {
 .town {
     background-image: url("../img/town.jpg");
     background-repeat: no-repeat;
+    background-color: #758775;
     background-position: 0 54%;
 }
 
@@ -333,6 +337,7 @@ li.site-link:nth-child(3) {
 .bridge {
     background-image: url("../img/bridge.jpg");
     background-repeat: no-repeat;
+    background-color: #d78d6e;
     background-position: 0 53%;
 }
 
@@ -360,7 +365,10 @@ li.site-link:nth-child(3) {
 }
 
 .interested-in h2 {
+    width: 300px;
     margin: 0;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 24px;
     padding: 0;
 
@@ -405,25 +413,19 @@ li.site-link:nth-child(3) {
 }
 
 .modal {
-  display: none;
+    display: none;
 }
 
 .modal-show {
-  display: block;
+    display: block;
+    animation: slide-right 1s;
 }
 
-.slideRight{
-    animation-name: slideRight;
-    -webkit-animation-name: slideRight; 
- 
-    animation-duration: 2s; 
-    -webkit-animation-duration: 2s;
- 
-    animation-timing-function: ease-in-out; 
-    -webkit-animation-timing-function: ease-in-out;     
+.modal-error {
+    animation: shake 0.6s;
 }
- 
-@keyframes slideRight {
+
+@keyframes slide-right {
     0% {
         transform: translateX(-150%);
     }
@@ -444,24 +446,15 @@ li.site-link:nth-child(3) {
     }   
 }
  
-@-webkit-keyframes slideRight {
-    0% {
-        -webkit-transform: translateX(-150%);
+@keyframes shake {
+    0%, 100% {
+    transform: translateX(0);
     }
-    50%{
-        -webkit-transform: translateX(8%);
+    10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
     }
-    65%{
-        -webkit-transform: translateX(-4%);
-    }
-    80%{
-        -webkit-transform: translateX(4%);
-    }
-    95%{
-        -webkit-transform: translateX(-2%);
-    }           
-    100% {
-        -webkit-transform: translateX(0%);
+    20%, 40%, 60%, 80% {
+    transform: translateX(10px);
     }
 }
 
@@ -499,12 +492,12 @@ li.site-link:nth-child(3) {
 
 .interested-in-persons label {
     margin-top: 5px;
-    margin-right: 41px;
+    margin-right: 40px;
 }
 
 .interested-in-persons .label-for-children {
     margin-left: 54px;
-    margin-right: 26px;
+    margin-right: 25px;
 }
 
 .interested-in-item input {
@@ -516,7 +509,7 @@ li.site-link:nth-child(3) {
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 12px;
-    padding-right: 38px;
+    padding-right: 36px;
 
     font-weight: 700;
     line-height: 26px;
@@ -527,7 +520,7 @@ li.site-link:nth-child(3) {
 
 .interested-in-persons input {
     width: 38px;
-    padding: 6px 13px;
+    padding: 6px 12px;
 }
 
 .interested-in-item input::-webkit-input-placeholder {
@@ -604,7 +597,7 @@ li.site-link:nth-child(3) {
 .calendar-conteiner {
     position: absolute;
     top: 7px;
-    right: 19px;
+    right: 15px;
 }
 
 .calendar {
@@ -673,8 +666,8 @@ li.site-link:nth-child(3) {
 
 .button-find {
     width: 460px;
-    margin-top: 55px;
-    padding: 14px 140px;
+    margin-top: 53px;
+    padding: 16px 140px;
 
     background-color: #81b3d2;
 }
@@ -690,12 +683,6 @@ li.site-link:nth-child(3) {
     background-color: #5496bd;
 }
 
-.map {
-    width: 1200px;
-
-    background-color: #cbdda9;
-}
-
 .map-img {
     min-height: 593px;
     margin: 0;
@@ -703,6 +690,7 @@ li.site-link:nth-child(3) {
 
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
+    background-color: #cbdda9;
     background-position: 0 0;
 }
 
@@ -923,8 +911,8 @@ li.site-link:nth-child(3) {
     content: "";
 
     position: absolute;
-    top: -2px;
-    left: -35px;
+    top: -1px;
+    left: -36px;
 
     width: 27px;
     height: 23px;
@@ -938,8 +926,8 @@ li.site-link:nth-child(3) {
     content: "";
 
     position: absolute;
-    top: -2px;
-    left: -35px;
+    top: -1px;
+    left: -36px;
 
     width: 27px;
     height: 23px;
@@ -1303,7 +1291,7 @@ li.site-link:nth-child(3) {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin: 0;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 
 .result-price {

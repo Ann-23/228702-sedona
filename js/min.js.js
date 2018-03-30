@@ -1,0 +1,1 @@
+var link=document.querySelector(".interested-in-button"),popup=document.querySelector(".modal");link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("modal-show")});
