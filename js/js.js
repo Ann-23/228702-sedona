@@ -4,7 +4,10 @@
  
  	link.addEventListener("click", function (evt) {
 		evt.preventDefault();
-		popup.classList.toggle("modal-show");
-	});
-	
-	
+		if (popup.classList.contains("modal-open")) {
+        popup.classList.remove("modal-open");
+        popup.classList.add("modal-close");
+      } else{
+	  	popup.classList.toggle("modal-show");
+	  }
+    });
