@@ -539,15 +539,6 @@ li.site-link:nth-child(3) {
     text-transform: uppercase;
 }
 
-.interested-in-item input::-ms-input-placeholder {
-    min-height: 38px;
-    
-    font-weight: 700;
-    line-height: 26px;
-    color: #000000;
-    text-transform: uppercase;
-}
-
 .interested-in-item input::-moz-placeholder {
     font-weight: 700;
     line-height: 26px;
@@ -798,14 +789,14 @@ li.site-link:nth-child(3) {
     margin-right: 8px;
 }
 
-.copyright a.html-academy-logo {
+.html-academy-logo {
     position: relative;
     
     width: 115px;
     height: 41px;
 }
 
-.copyright a.html-academy-logo:before {
+.html-academy-logo:before {
     content: "";
     
     position: absolute;
@@ -819,16 +810,16 @@ li.site-link:nth-child(3) {
     height: 41px;
 }
 
-.copyright a.html-academy-logo svg path {
+.html-academy-logo svg path {
     color: #000000;
 }
 
-.copyright a.html-academy-logo:hover svg path,
-.copyright a.html-academy-logo:focus svg path {
+.html-academy-logo:hover svg path,
+.html-academy-logo:focus svg path {
     color: #81b3d2;
 }
 
-.copyright a.html-academy-logo:active svg path {
+.html-academy-logo:active svg path {
     color: #bdbbbc;
 }
 
