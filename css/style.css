@@ -421,10 +421,6 @@ li.site-link:nth-child(3) {
     animation: slide-right 1s;
 }
 
-.modal-error {
-    animation: shake 0.6s;
-}
-
 @keyframes slide-right {
     0% {
         transform: translateX(-150%);
@@ -446,18 +442,6 @@ li.site-link:nth-child(3) {
     }   
 }
  
-@keyframes shake {
-    0%, 100% {
-    transform: translateX(0);
-    }
-    10%, 30%, 50%, 70%, 90% {
-    transform: translateX(-10px);
-    }
-    20%, 40%, 60%, 80% {
-    transform: translateX(10px);
-    }
-}
-
 .interested-in-form {
     position: absolute;
     
@@ -614,16 +598,16 @@ li.site-link:nth-child(3) {
     display: block;
 }
 
-.calendar svg path {
+.calendar svg {
     fill: #cacaca;
 }
 
-.calendar:hover svg path,
-.calendar:focus svg path {
+.calendar:hover svg,
+.calendar:focus svg {
     fill: #000000;
 }
 
-.calendar:active svg path {
+.calendar:active svg {
     fill: #81b3d2;
 }
 
@@ -810,16 +794,16 @@ li.site-link:nth-child(3) {
     height: 41px;
 }
 
-.html-academy-logo svg path {
+.html-academy-logo svg {
     color: #000000;
 }
 
-.html-academy-logo:hover svg path,
-.html-academy-logo:focus svg path {
+.html-academy-logo:hover svg,
+.html-academy-logo:focus svg {
     color: #81b3d2;
 }
 
-.html-academy-logo:active svg path {
+.html-academy-logo:active svg {
     color: #bdbbbc;
 }
 
