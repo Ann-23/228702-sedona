@@ -192,7 +192,7 @@ li.site-link:nth-child(3) {
 
 .reasons-5 {
     text-align: center;
-    
+
     width: 495px;
     margin: 0;
     margin-top: 30px;
@@ -391,7 +391,7 @@ li.site-link:nth-child(3) {
 .button-style {
     position: relative;
     z-index: 100;
-    
+
     width: 569px;
     margin: 0 auto;
 }
@@ -414,6 +414,10 @@ li.site-link:nth-child(3) {
     background-color: #503e33;
 }
 
+.no-js {
+    display: block;
+}
+
 .modal {
     display: none;
 }
@@ -431,6 +435,10 @@ li.site-link:nth-child(3) {
     animation: slide-right 1s;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
 @keyframes slide-right {
     0% {
         transform: translateX(-150%);
@@ -446,22 +454,44 @@ li.site-link:nth-child(3) {
     }
     95%{
         transform: translateX(-2%);
-    }           
+    }
     100% {
         transform: translateX(0%);
-    }   
+    }
 }
- 
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 .interested-in-form {
     position: absolute;
-    
+
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     padding: 55px;
-        
+
     background-color: #ffffff;
 }
 
@@ -515,7 +545,7 @@ li.site-link:nth-child(3) {
 .interested-in-persons input {
     width: 38px;
     padding: 6px 12px;
-    
+
     text-align: center;
 }
 
@@ -528,7 +558,7 @@ li.site-link:nth-child(3) {
 
 .interested-in-item input:-ms-input-placeholder {
     min-height: 38px;
-    
+
     font-weight: 700;
     line-height: 26px;
     color: #000000;
@@ -540,7 +570,7 @@ li.site-link:nth-child(3) {
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
-    
+
     opacity: 1;
 }
 
@@ -549,7 +579,7 @@ li.site-link:nth-child(3) {
     line-height: 26px;
     color: #000000;
     text-transform: uppercase;
-    
+
     opacity: 1;
 }
 
@@ -567,7 +597,7 @@ li.site-link:nth-child(3) {
 .interested-in-item input:focus {
     padding-top: 4px;
     padding-bottom: 4px;
-    
+
     outline: none;
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
@@ -589,10 +619,10 @@ li.site-link:nth-child(3) {
 
 .calendar {
     position: relative;
-    
+
     width: 21px;
     height: 22px;
-    
+
     border: none;
     background: none;
     outline: none;
@@ -600,13 +630,13 @@ li.site-link:nth-child(3) {
 
 .calendar:after {
     content: "";
-    
+
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    
+
     display: block;
 }
 
@@ -673,7 +703,7 @@ li.site-link:nth-child(3) {
 .map {
     min-height: 593px;
     margin: 0;
-    
+
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-color: #cbdda9;
@@ -683,12 +713,12 @@ li.site-link:nth-child(3) {
 .map-img {
     position: absolute;
     z-index: 1;
-    
+
     width: 1200px;
     min-height: 593px;
     margin: 0;
     padding: 0;
-    
+
     background-image: url(../img/map.jpg);
     background-repeat: no-repeat;
     background-color: #cbdda9;
@@ -698,16 +728,16 @@ li.site-link:nth-child(3) {
 .map iframe {
     position: relative;
     z-index: 2;
-    
+
     margin: 0;
-    
+
     border: none;
 }
 
 .main-footer {
     position: absolute;
     z-index: 3;
-    
+
     width: 1200px;
     margin: 0;
     margin-top: -121px;
@@ -815,20 +845,20 @@ li.site-link:nth-child(3) {
 
 .html-academy-logo {
     position: relative;
-    
+
     width: 115px;
     height: 41px;
 }
 
 .html-academy-logo:before {
     content: "";
-    
+
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-    
+
     display: block;
     width: 115px;
     height: 41px;
@@ -1011,10 +1041,10 @@ li.site-link:nth-child(3) {
 .price-controls label {
     display: inline-block;
     vertical-align: top;
-    
+
     font-size: 14px;
     line-height: 38px;
-    
+
     cursor: pointer;
 }
 
@@ -1067,7 +1097,7 @@ li.site-link:nth-child(3) {
     border-radius: 50%;
     -webkit-box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
             box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-    
+
     cursor: pointer;
 }
 
@@ -1097,7 +1127,7 @@ li.site-link:nth-child(3) {
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    
+
     cursor: pointer;
 }
 
@@ -1202,7 +1232,7 @@ li.site-link:nth-child(3) {
     width: 0;
     height: 0;
     margin-right: 5px;
-    
+
     border: 7px solid transparent;
     border-bottom-color: #cacaca;
     border-top: 0;
